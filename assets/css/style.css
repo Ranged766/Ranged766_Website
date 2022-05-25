@@ -1,0 +1,92 @@
+@font-face {
+    font-family: lcd;
+    src: url(font/DS-DIGII.TTF);
+  }
+
+  @keyframes example {
+    0%   {opacity: 1;}
+    100%   {opacity: 0;}
+  }
+
+  @keyframes blinkinganim {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .offtodx5{
+      padding-left: 5%;
+  }
+
+  body{
+      background-color: black;
+  }
+
+.ttext{
+    color: lime;
+}
+
+  div {
+    background-color:black;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-direction: reverse;
+  }
+
+  .menu{
+    font-family: lcd;
+    font-size:  175%;
+    padding-left: 7%;
+  }
+
+  .blinking{
+      animation-name: blinkinganim;
+      animation-duration: 1s;
+      animation-direction: reverse;
+      animation-iteration-count: infinite;
+  }
+
+  .blink {
+    animation: blink 1s step-start 0s infinite;
+  }
+
+  .inputsele{
+    color: lime;
+    font-family: lcd;
+    font-size:  larger;
+    background: transparent;
+    padding-left: -5%;
+    border: none;
+    outline: none;
+  }
+
+  .errore{
+      color: red;
+  }
+
+  .website{
+    font-size: 70%;
+    padding-left: 14%;
+  }
+
+  .unreserved{
+    font-family: lcd;
+    font-size:  145%;
+  }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta content="text/html; charset=UTF-8"/>
+  <script type="text/javascript">
+	var t;
+	var n;
+	var g;
+	var i;
+	var c;
+	function genera(){
+	
+		console.log("Ricordati di inserire numeri da 1 a 10");
+		
+		g= Math.round(Math.random()*10);
+		console.log("Numero generato"+g);
+		t=0;
+		i=0;
+	}
+	function controllo(){
+		n = document.getElementById('indo').value*1;
+		console.log("Numero inserito"+n);
+		
+		if(n<10&&n>0){
+			if(i==0){
+				if(t<5){
+					if(n==g){
+						console.log("Hai indovinato");
+						i=1;
+					}
+					if(n>g){
+						console.log("Il numero e' maggiore");
+					}
+					if(n<g){
+						console.log("Il numero e' minore");
+					}
+					if(t>5){
+						console.log("Fine tentativi");
+					}else{
+						t=t+1;
+						console.log("I tuoi tentativi sono:"+t);
+						console.log("Hai ancora:"+(5-t));
+					}
+				}else{
+					console.log("Hai finito i tentativi");
+				}
+			}else{
+				console.log("Hai gia' vinto");
+			}
+		}else{
+		console.log("Numero non valido");
+		}
+	}
+  </script>
+</head>
+<body>
+	<h3>Indovina numero</h3>
+	<input type="text" id="indo">
+	<button onclick="genera();">Genera numero
+	<button onclick="controllo();">Controlla il numero</button>
+    <br>
+    <a href=../land.html>Pagina principale</a>
+	
+</body>
+</html>

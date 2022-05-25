@@ -1,0 +1,23 @@
+body{
+    height: 300px;
+    width: 50%;
+}
+
+table tr td{
+    height: 20%;
+    width: 20%;
+    padding: 0;
+}
+
+table{
+    height: 80%;
+    width: 40%;
+}
+
+table tr td button{
+    height: 100%;
+    width: 100%;
+    font-size: 0px;
+    border: none;
+    background-color: gray;
+}

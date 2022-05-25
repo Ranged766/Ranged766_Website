@@ -1,0 +1,11 @@
+.cerchio{
+width: 0;
+height: 0;
+border: 180px solid red;
+border-radius: 180px;
+}
+.quadrato {
+	width:100px;
+	height:100px;
+	background:orange;
+}
