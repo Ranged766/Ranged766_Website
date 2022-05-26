@@ -19,25 +19,20 @@
     }
   }
 
-.center {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-  }
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 
   .offtodx5{
       padding-left: 5%;
   }
 
-  body{
-      background-color: black;
-  }
-
-.ttext{
-    color: lime;
-}
-
-  div {
+  .anim {
     background-color:black;
     position:fixed;
     width:100%;
@@ -47,7 +42,7 @@
     z-index:1000;
     animation-name: example;
     animation-duration: 3s;
-    animation-direction: reverse;
+    animation-direction: normal;
   }
 
   .menu{
@@ -75,6 +70,7 @@
     padding-left: -5%;
     border: none;
     outline: none;
+    caret-color: transparent;
   }
 
   .errore{
@@ -90,3 +86,84 @@
     font-family: lcd;
     font-size:  145%;
   }
+
+  .asciiart{
+    font-family: monospace;
+    white-space: pre;
+  }
+
+  p{
+    padding: 0;
+    margin: 0;
+  }
+
+  .background{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    position: fixed; /* Sit on top of the page content */
+    background-image: url('../gif/noise.gif');
+    opacity: 0.19;
+    background-repeat: repeat;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+  }
+
+  body {
+    animation: fadeInAnimation ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    background-color: black;
+    color: lime;
+    
+}
+
+.overlay {
+  pointer-events: none;
+  position: fixed; /* Sit on top of the page content */
+  opacity: 0.2;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.overlayunused{
+  display: none; /* Hidden by default */
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.left{
+  
+  all:unset;
+  border-radius: 50%;
+  float: left;
+  padding-right: 5%;
+  width: 15rem; /* you can use % */
+  height: auto;
+}
+
+.img{
+  
+  all:unset;
+  float: left;
+  padding-right: 5%;
+  width: 10%; /* you can use % */
+  height: auto;
+}
+
+.ignore{
+  all: unset;
+}
+
+@keyframes blink {50% { color: transparent }}
+.loader__dot { animation: 1s blink infinite }
+.loader__dot:nth-child(2) { animation-delay: 250ms }
+.loader__dot:nth-child(3) { animation-delay: 500ms }
