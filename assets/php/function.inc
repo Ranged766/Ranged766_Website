@@ -11,9 +11,10 @@
                     header('Location: aboutme.php');
                     break;
                 case '2':
-                    header('Location: aboutme.php');
+                    header('Location: projects.php');
                 break;
                 case '3':
+                    header('Location: social.php');
                 break;
                 case '4':
                     header('Location: old/index.html');

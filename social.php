@@ -14,7 +14,7 @@
             <img src="assets/img/github.png" class="img">
             <br>1) Github.com<br><br><br>
             <img src="assets/img/instagram.png" class="img">
-            <br>2) Instagram.com<br><br><br>
+            <br>2) Instagram.com (I don't have it :upsidedownface:) <br><br><br>
             <img src="assets/img/steam.png" class="img">
             <br>3) Steam.com<br><br><br>
             <img src="assets/img/twitter.png" class="img">

@@ -8,19 +8,19 @@
         if($libera==2){
             switch ($selection) {
               case '1':
-                    header('Location: https://github.com/');
+                    header('Location: https://github.com/Ranged766');
                     break;
                 case '2':
                     header('Location: https://instagram.com/');
                 break;
                 case '3':
-                    header('Location: https://steam.com/');
+                    header('Location: https://steamcommunity.com/id/Ranged766');
                 brak;
                 case '4':
-                    header('Location: https://twitter.com/');
+                    header('Location: https://twitter.com/ranged766');
                 brak;
                 case '5':
-                    header('Location: https://twitch.tv/');
+                    header('Location: https://www.twitch.tv/ranged766');
                 brak;
                 case '6':
                     header('Location: index.php');
