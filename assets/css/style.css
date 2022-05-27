@@ -155,7 +155,7 @@
   all:unset;
   float: left;
   padding-right: 5%;
-  width: 10%; /* you can use % */
+  width: 5%; /* you can use % */
   height: auto;
 }
 
